@@ -1,0 +1,14 @@
+year=int(input("請從400年開始輸入:"))
+if(year>399):
+    if(year%4)==0:
+        if(year%100)==0:
+            if(year%400)==0:
+                print("{0}年是閏年".format(year))
+            else:
+                print("{0}年不是閏年".format(year))
+        else:
+            print("{0}年是閏年".format(year))
+    else:
+        print("{0}年不是閏年".format(year))
+else:
+    print("錯誤!請從400年開始輸入")
